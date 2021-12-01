@@ -1,39 +1,14 @@
-body {
-  background-color: #3a3a3a;
-}
-
-.wrapper {
+body .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   height: 720px;
 }
-
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.item1 .num {
-  height: 100px;
-  width: 100px;
-  background-color: #22e73c;
-  border-radius: 20%;
-}
-
-.wrapper * {
-  background: #c2f0b7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1px;
-  margin-right: 1px;
-}
-
-.contents {
+body .wrapper .contents {
   display: grid;
+  font-size: 40px;
 }
-
-.btn {
+body .wrapper .contents .btn {
   border: none;
   background-color: #eee;
   color: #222;
@@ -43,14 +18,15 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
-
-.btn:hover {
+body .wrapper .contents .btn:hover {
   background-color: #f5f579;
   transition: 300ms;
   box-shadow: 10px 10px #696262;
 }
-
-.guess {
+body .wrapper .contents p {
+  align-items: baseline;
+}
+body .wrapper .contents .guess {
   background: none;
   border: 4px solid #13df68;
   font-family: inherit;
@@ -61,4 +37,24 @@ body {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
+}
+body .wrapper .item {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+body .wrapper .item .number {
+  height: 100px;
+  width: 100px;
+  background-color: #13df68;
+  border-radius: 20%;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+body .wrapper * {
+  background: #c2f0b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+  margin-right: 1px;
 }/*# sourceMappingURL=style.css.map */
